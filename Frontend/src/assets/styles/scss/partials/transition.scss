@@ -1,0 +1,17 @@
+.default-layout-enter-active,
+.default-layout-leave-active {
+  transition: opacity 0.5s;
+}
+.default-layout-enter,
+.default-layout-leave-active {
+  opacity: 0;
+}
+//
+.default-page-enter-active,
+.default-page-leave-active {
+  transition: opacity 0.3s;
+}
+.default-page-enter,
+.default-page-leave-active {
+  opacity: 0;
+}

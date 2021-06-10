@@ -1,0 +1,160 @@
+
+.mapBox {
+  ::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    background-color: #47749E;
+    border: 2px solid transparent;
+    width: 5px;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: rgb(236, 236, 236);
+    border-radius: 0px 2px 2px 0px;
+  }
+
+
+  .search-box {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+        
+    .searchBtn{
+      width: 50px;
+      height: 50px;
+      padding: 7px;
+      background: white;
+      border: 2px solid rgba(0,0,0,0.2);
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .ant-modal-content {
+      position: absolute;
+      right: 60px;
+      top: 0px;
+      width: 400px;
+      max-height: calc(100vh - 120px);
+
+      .ant-modal-header {
+        background: #47749e;
+        .ant-modal-title {
+          color: white;
+          text-align: center;
+        }
+      }
+
+      .ant-modal-body {
+        padding: 20px;
+      }
+
+      .ant-input:hover {
+        border-color: #47749e;
+        border-right-width: 1px !important;
+      }
+
+      .ant-input:focus {
+        border-color: #47749e;
+      }
+
+      .ant-btn-primary {
+        background-color: #47749e;
+        border-color: #47749e;
+      }
+
+      .ant-list-header {
+        color: white;
+        background: #47749e;
+      }
+
+      .ant-input-search {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .ant-list-items {
+        max-height: calc(100vh - 300px);
+        overflow-y: scroll;
+      }
+
+      .ant-list-item {
+        padding: 10px;
+        background: white;
+        width: 100%;
+      }
+
+      .ant-list-item:hover {
+        color: #47749e;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.filter-feature-box {
+  .ant-modal-content {
+    position: absolute;
+    right: 70px;
+    top: 10px;
+    width: 300px;
+
+    .ant-modal-header {
+      background: #47749e;
+      .ant-modal-title {
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+
+  .label {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+    span {
+      display: inline-block;
+      border: 2px solid #47749e;
+      border-radius: 3px;
+      padding: 2px 5px;
+    }
+
+  }
+}
+
+.boxBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 7px;
+  background: white;
+  border: 2px solid rgba(0,0,0,0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.bottom-tool-box {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: calc(50% - 25px);
+  .filterBox {
+    .filterBtn {
+              width: 50px;
+              height: 50px;
+              padding: 7px;
+              background: white;
+              border: 2px solid rgba(0,0,0,0.2);
+              border-radius: 4px;
+              cursor: pointer;
+            }
+  }
+}

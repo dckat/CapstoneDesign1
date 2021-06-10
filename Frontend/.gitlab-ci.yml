@@ -1,0 +1,59 @@
+stages:
+  - others
+  - build
+  - deploy
+
+.build:
+  cache:
+    paths:
+      - node_modules/
+
+.deploy:
+  variables:
+    GIT_STRATEGY: none
+
+dev_build:
+  stage: build
+  extends: .build
+  script:
+    - yarn install
+    - yarn build
+  only:
+    - develop
+  tags:
+    - front
+
+dev_deploy:
+  stage: deploy
+  extends: .deploy
+  script:
+    - pm2 start --exp-backoff-restart-delay=100
+  only:
+    - develop
+  tags:
+    - front
+#(DEV) mockserver:
+#  stage: deploy
+#  extends: .deploy
+#  image: node:15
+#  script: yarn serve
+#  only:
+#    - develop
+#  artifacts:
+#    paths:
+#      - ./
+#  tags:
+#    - ws-server
+#
+#(DEV) websocket:
+#  stage: deploy
+#  extends: .deploy
+#  image: docker:latest
+#  script: yarn ws
+#  only:
+#    - develop
+#  artifacts:
+#    paths:
+#      - ./
+#  tags:
+#    - api-server
