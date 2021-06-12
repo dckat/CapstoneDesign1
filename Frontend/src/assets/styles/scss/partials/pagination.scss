@@ -1,0 +1,19 @@
+.ant-table-pagination.ant-pagination {
+  float: none;
+  text-align: center;
+}
+
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link,
+.ant-pagination-item {
+  border: none;
+  outline: none;
+}
+
+.ant-pagination-item {
+  font-size: 1rem;
+}
+
+.ant-pagination-item-active a {
+  font-weight: bolder;
+}

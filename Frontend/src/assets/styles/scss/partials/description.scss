@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Roboto:wght@500&display=swap');
+
+.ant-descriptions-bordered .ant-descriptions-item-label {
+  background-color: #47749e;
+  color: white;
+}
+
+.ant-descriptions-item {
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.ant-descriptions-row {
+  font-family: 'Noto Sans KR', sans-serif;
+  .ant-descriptions-item-content {
+    min-width: 150px;
+    font-size: 13px;
+    background: white;
+  }
+}
+
+.ant-descriptions-item > span {
+  align-self: center;
+}
+
+.ant-descriptions-bordered .ant-descriptions-item-label,
+.ant-descriptions-bordered .ant-descriptions-item-content {
+  padding: 10px 10px;
+}
+.description-box .ant-descriptions-item {
+  display: table-cell;
+}
+
+.drone-detail {
+  .ant-descriptions-view {
+    max-height: calc(100vh - 120px);
+    overflow: auto;
+  }
+
+  .ant-descriptions-item-label.ant-descriptions-item-colon {
+    font-size: 16px;
+  }
+}
+
+.ant-page-header-content {
+  .search-box .ant-descriptions-row .ant-descriptions-item-content {
+    min-width: 0;
+  }
+  .search-box .ant-descriptions-row {
+    font-family: none;
+  }
+}

@@ -1,0 +1,27 @@
+@import '@/assets/styles/mixins.scss';
+
+.page-header {
+  background-color: white;
+  border: $gray-3 1px solid;
+  border-radius: 6px;
+}
+
+.search-input {
+  width: 50%;
+  min-width: 200px;
+}
+
+.page-main {
+  margin-top: 20px;
+  padding: 20px 20px 20px 20px;
+  background-color: white;
+  border-radius: 6px;
+  border: $gray-2 1px solid;
+}
+
+.page-main-without-header {
+  padding: 20px 20px 20px 20px;
+  background-color: white;
+  border-radius: 6px;
+  border: $gray-2 1px solid;
+}

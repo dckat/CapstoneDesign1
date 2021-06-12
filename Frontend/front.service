@@ -1,0 +1,14 @@
+[Unit]
+Description=Drone front service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=gitlab-runner
+ExecStart=/home/gitlab-runner/builds/4hhEfxWU/0/khu-oz-wizard/drone-monitoring-web-ui yarn start
+
+[Install]
+WantedBy=multi-user.target
